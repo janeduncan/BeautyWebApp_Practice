@@ -1,0 +1,9 @@
+<form action="/beauty-products/<%= @item.id %>/update" method="post">
+<label for="brand">Brand: </label>
+<input type="brand" type="text" name="brand" value=<%= @item.brand() %> >
+<label for="category">Category: </label>
+<input type="category" type="text" name="category" value=<%= @item.category() %> >
+<label for="colour">Colour: </label>
+<input type="colour" type="text" name="colour" value=<%= @item.colour() %>>
+<input type="submit" value="Submit">
+</form>

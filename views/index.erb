@@ -1,0 +1,7 @@
+<h1>All Beauty Products</h1>
+
+<% @item.each do |item| %>
+  <p>Product: <%= item.brand %> <%= item.category %></p>
+  <p><a href="/beauty-products/<%= item.id %>">Show Item</a></p>
+  <hr />
+<% end %>
