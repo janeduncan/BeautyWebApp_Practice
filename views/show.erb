@@ -2,17 +2,17 @@
 <p>Category: <%= @item.category() %></p>
 <p>Colour: <%= @item.colour() %></p>
 
-<!-- <form action="/beauty-products/<%= @item.id %>/edit" method="get">
+<form action="/beauty-products/<%= @item.id %>/edit" method="get">
   <input type="submit" value="Edit item">
 </form>
 
-<form action="/beauty-products/<%= @item.delete() %>/delete" method="post">
+<form action="/beauty-products/<%= @item.id() %>/delete" method="post">
   <input type="submit" value="Delete item">
-</form> -->
-<form action="/beauty-products/<%= @item.id %>/edit" method="get">
+</form>
+<!-- <form action="/beauty-products/<%= @item.id %>/edit" method="get">
   <input type="submit" value="Edit order">
 </form>
 
 <form action="/beauty-products/<%= @item.id %>/delete" method="post">
   <input type="submit" value="Delete order">
-</form>
+</form> -->

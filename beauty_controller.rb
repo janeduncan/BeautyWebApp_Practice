@@ -41,10 +41,14 @@ post '/beauty-products/:id/update' do
   @item.update()
   redirect '/beauty-products'
 end
-
+#
 # this is our DELETE route
 post '/beauty-products/:id/delete' do
   @item = BeautyProduct.find(params[:id])
   @item.delete()
   redirect '/beauty-products'
 end
+#
+# post '/beauty-products/' do
+#   "Hello World"
+# end
