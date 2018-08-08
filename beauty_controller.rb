@@ -48,7 +48,7 @@ post '/beauty-products/:id/delete' do
   @item.delete()
   redirect '/beauty-products'
 end
-#
-# post '/beauty-products/' do
-#   "Hello World"
-# end
+
+get '/images/:file' do
+  send_file File.expand_path(params[:file], settings.public_folder)
+end
